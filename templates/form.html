@@ -1,0 +1,34 @@
+<html>  
+
+<style>
+.container {
+  height: 200px;
+  position: relative;
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+
+   <body>
+      <div class="container">
+      <div class="center">  
+      <h1>Type Your Word</h1>  
+      <form action = "http://localhost:5000/dictionary" method = "POST">  
+         <h2><input type = "text" name ="word"/></h2>   
+         <h3><button type="submit">Submit</button></h3>  
+      </form>
+      <br>
+      </br>
+      <h4 style="color:MediumSeaGreen;"> {{final_result}} </h4>
+      </div>
+      </div>
+   </body>  
+</html>  
